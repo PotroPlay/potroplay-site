@@ -3,85 +3,193 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#101810">
-  <title>PotroPlay | Downloads oficiais</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#081735">
+  <meta name="description" content="PotroPlay — SUA TV DO SEU JEITO. Baixe para celular ou TV.">
+  <title>PotroPlay | SUA TV DO SEU JEITO</title>
   <style>
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       min-height: 100vh;
-      padding: 24px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #101810;
-      color: white;
-      font-family: Arial, sans-serif;
+      padding: 24px 16px 40px;
+      color: #f4f7ff;
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        repeating-linear-gradient(
+          135deg,
+          rgba(255,255,255,.025) 0,
+          rgba(255,255,255,.025) 8px,
+          transparent 8px,
+          transparent 23px
+        ),
+        linear-gradient(135deg, #101d35, #071735 65%, #102c5a);
     }
-    .card {
+
+    .container {
       width: 100%;
-      max-width: 430px;
-      padding: 36px 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .banner {
+      display: block;
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 18px 45px rgba(0,0,0,.25);
+    }
+
+    .intro {
       text-align: center;
-      background: #1b251c;
-      border: 1px solid #344536;
-      border-radius: 22px;
+      margin: 30px 0 24px;
     }
-    .logo {
-      font-size: 36px;
-      font-weight: 900;
-      letter-spacing: 1px;
-    }
-    .logo span { color: #52dc7b; }
-    .slogan {
-      margin: 12px 0 30px;
-      color: #c0d0c1;
-      letter-spacing: 2px;
+
+    .eyebrow {
+      color: #ffc20e;
       font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-transform: uppercase;
     }
+
+    h1 {
+      margin: 12px 0 8px;
+      font-size: clamp(27px, 5vw, 42px);
+      line-height: 1.1;
+    }
+
+    h1 span { color: #27c36a; }
+
+    .slogan {
+      margin: 0;
+      color: #ffc20e;
+      font-size: clamp(16px, 3vw, 22px);
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .description {
+      margin: 14px 0 0;
+      color: #bdcbe3;
+      line-height: 1.6;
+    }
+
+    .downloads {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .download-card {
+      padding: 25px 20px;
+      background: rgba(13, 35, 72, .88);
+      border: 1px solid #244575;
+      border-radius: 16px;
+      text-align: center;
+    }
+
+    .device {
+      font-size: 38px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 21px;
+    }
+
+    .download-card p {
+      min-height: 42px;
+      color: #bdcbe3;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
     .button {
       display: block;
-      margin-top: 15px;
-      padding: 17px;
-      border-radius: 12px;
-      background: #32bd60;
-      color: #07140a;
-      font-size: 16px;
-      font-weight: bold;
+      margin-top: 20px;
+      padding: 16px 12px;
+      border-radius: 10px;
+      background: #27c36a;
+      color: #061b13;
+      font-weight: 900;
       text-decoration: none;
+      transition: background .2s, transform .2s;
     }
-    .button:hover { background: #52dc7b; }
-    .note {
-      margin-top: 25px;
-      color: #a9b9aa;
+
+    .button:hover {
+      background: #48e184;
+      transform: translateY(-2px);
+    }
+
+    .footer {
+      margin-top: 30px;
+      text-align: center;
+      color: #8ea6cc;
       font-size: 12px;
-      line-height: 1.6;
+      letter-spacing: 2px;
+    }
+
+    .footer strong { color: #ffc20e; }
+
+    @media (max-width: 600px) {
+      body { padding: 14px 12px 28px; }
+      .downloads { grid-template-columns: 1fr; }
+      .download-card p { min-height: auto; }
+      .intro { margin-top: 24px; }
     }
   </style>
 </head>
 <body>
-  <main class="card">
-    <div class="logo">POTRO<span>PLAY</span></div>
-    <div class="slogan">SUA TV DO SEU JEITO</div>
+  <main class="container">
 
-    <h2>Baixe seu aplicativo</h2>
-    <p>Escolha a versão para o seu dispositivo.</p>
+    <img
+      class="banner"
+      src="712447013_122102009841340138_7641638514280826409_n.png"
+      alt="PotroPlay — canais ao vivo, esporte e muito mais"
+    >
 
-    <a class="button"
-       href="https://drive.google.com/uc?export=download&id=1wbpLQGK3LsDBj3QmkZtOL9z5lIsRsgrQ">
-      📱 BAIXAR PARA CELULAR
-    </a>
+    <header class="intro">
+      <div class="eyebrow">◆ SUA EXPERIÊNCIA, DO SEU JEITO</div>
+      <h1>POTRO<span>PLAY</span></h1>
+      <p class="slogan">SUA TV DO SEU JEITO</p>
+      <p class="description">
+        Escolha seu dispositivo e baixe a versão do aplicativo.
+      </p>
+    </header>
 
-    <a class="button"
-       href="https://drive.google.com/uc?export=download&id=1Xu5hFKSxpk8YOJkvkVdXBPbTlNY8nUPV">
-      📺 BAIXAR PARA TV
-    </a>
+    <section class="downloads" aria-label="Downloads do aplicativo">
 
-    <div class="note">
-      PotroPlay — SUA TV DO SEU JEITO<br>
-      Baixe a versão compatível com seu dispositivo.
-    </div>
+      <article class="download-card">
+        <div class="device" aria-hidden="true">📱</div>
+        <h2>PotroPlay para celular</h2>
+        <p>Versão para dispositivos Android compatíveis.</p>
+        <a class="button"
+           href="https://drive.google.com/uc?export=download&id=1wbpLQGK3LsDBj3QmkZtOL9z5lIsRsgrQ">
+          BAIXAR PARA CELULAR
+        </a>
+      </article>
+
+      <article class="download-card">
+        <div class="device" aria-hidden="true">📺</div>
+        <h2>PotroPlay para TV</h2>
+        <p>Versão para TVs e dispositivos Android TV compatíveis.</p>
+        <a class="button"
+           href="https://drive.google.com/uc?export=download&id=1Xu5hFKSxpk8YOJkvkVdXBPbTlNY8nUPV">
+          BAIXAR PARA TV
+        </a>
+      </article>
+
+    </section>
+
+    <footer class="footer">
+      POTROPLAY · <strong>SUA TV DO SEU JEITO</strong>
+    </footer>
+
   </main>
 </body>
 </html>
